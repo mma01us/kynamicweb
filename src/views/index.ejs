@@ -4,24 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- COMING SOON. INQUIRIES: michael.ma@nyu.edu -->
 
     <!-- Google Fonts -->
+    <!-- Baskerville -->
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <!-- Work Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen|Patua+One|Quicksand|Raleway|Work+Sans:300&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="../css/styles.css">
 
+    <!-- JQuery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+    <!-- Font Loader -->
+    <style>
+        .Work_Sans {
+            font-family: 'Work Sans', sans-serif;
+            letter-spacing: 15px;
+        }
+        .Oxygen {
+            font-family: 'Oxygen', sans-serif;
+            letter-spacing: 15px;
+        }
+        .Quicksand {
+            font-family: 'Quicksand', sans-serif;
+            letter-spacing: 15px;
+        }
+        .Raleway {
+            font-family: 'Raleway', sans-serif;
+            letter-spacing: 15px;
+        }
+        .Patua_One {
+            font-family: 'Patua One', cursive;
+            letter-spacing: 15px;
+        }
+    </style>
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="../assets/Kynamic-K-Logo.png">
 
-    <title>Home</title>
+    <title>Kynamic</title>
 </head>
-<body>
+<body style="background-color: white">
     <div class="centered">
         <img src="../assets/Kynamic-Text-Logo_Kynamic-Text-Logo.png" alt="Logo" height=500% width=500%></img>
     </div>
     <div class="expect-text">
-        <h5 class="expect">Expect Great Things</h5>
+        <h5 id="expect-text">EXPECT GREAT THINGS</h5>
     </div>
+
+    <script>
+        var fonts = ['Work_Sans', 'Raleway', 'Oxygen', 'Quicksand', 'Patua_One'];
+        var messages = ['EXPECT GREAT THINGS', 'EXPECT AMAZING THINGS', 'EXPECT BIG THINGS'];
+        var rand = fonts[Math.floor(Math.random() * fonts.length)];
+        var rand2 = messages[Math.floor(Math.random() * messages.length)];
+        console.log(rand);
+
+        var bodyElement = document.getElementById("expect-text");
+        bodyElement.className = 'Work_Sans';
+        //bodyElement.className = rand;
+        //bodyElement.innerHTML = rand2;
+    </script>
 </body>
 </html>

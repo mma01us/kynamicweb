@@ -1,9 +1,5 @@
 @charset "utf-8";
 
-.expect {
-    font-family: 'Libre Baskerville', serif;
-}
-
 .expect-text {
     position: fixed;
     top: 50%;
