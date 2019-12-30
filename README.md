@@ -1,2 +1,2 @@
-# kynamicweb
+# Kynamic Web
 kynamic.com
