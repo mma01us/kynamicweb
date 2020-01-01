@@ -2,11 +2,10 @@
 
 .expect-text {
     position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 400%);
-    overflow: hidden;
+	bottom: 10px;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, 0);
 }
 
 .centered {
